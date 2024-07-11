@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icons/woven-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Woven</title>
+</head>
+<body>
+    <div class="mx-auto w-[100%] sm:w-full flex flex-col font-body">
+        <div class="navbar z-20 w-full fixed flex flex-col justify-center items-center bg-white shadow-xl">
+
+            <div class="buttons flex flex-row w-full justify-between">
+                <div class="lg:flex flex-row items-center hidden" id="search-section">
+                    <button id="search-button"><img src="/icons/search.png" class="h-6 ml-[51px]" alt=""></button>
+                    <div id="search-container" class="is-hidden flex items-center flex-row w-full">
+                        <input type="text" id="search-box" class=" rounded-full w-80 py-2 px-5 border-[1px] border-black text-lg" placeholder="Search...">
+                        <button id="exit-search" class="ml-2 text-2xl cursor-pointer"><img src="/icons/close.png" class="h-4 transition-transform duration-300 ease-in-out hover:rotate-90" alt=""></button>
+                    </div>
+                </div>
+                <a href="" id="logo"><img src="/icons/logo.png" class="h-[75px] p-4 lg:p-0" alt=""></a>
+                <div id="icons" class="flex flex-row gap-x-4 items-center mr-10"> 
+                    <a href="cart.html"><img src="/icons/shopping-bag.png" class="h-6" alt=""></a>
+                    <a href="user.html"><img src="/icons/user.png" class="h-6" alt=""></a>
+                </div>
+            </div>
+            
+            <div class="nabvar-child">
+                <ul class="flex flex-row text-base my-3">
+                    <li><a href="index.html" class="mx-4 text-slate-900 hover:underline hover:text-slate-200 transition-colors duration-200">HOME</a></li>
+                    <li class="relative group collection mx-4">
+                        <p class="collections underline text-custom-200 transition-colors duration-200 cursor-pointer">COLLECTIONS</p>
+                        <ul class="hidden group-hover:block group-hover:hover:block absolute left-[-20px] top-3 mt-2 w-56 bg-white shadow-lg">
+                            <li class="mt-2 px-6"><a href="collection.html"  class=" hover:underline hover:text-slate-200 transition-colors duration-200 ">SUMMER COLLECTION</a></li>
+                            <li class="pt-2 px-6"><a href=""  class=" hover:underline hover:text-slate-200 transition-colors duration-200">COMING SOON</a></li>
+                            <li class="pt-2 px-6"><a href=""  class=" hover:underline hover:text-slate-200 transition-colors duration-200">COMING SOON</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="mx-4 text-slate-900 hover:underline hover:text-slate-200 transition-colors duration-200">ABOUT US</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class=" w-full md:h-72">
+            <img src="/vervana-bag-photos/still-life-beach-bag-ready-travel.jpg" class="xl:mt-20 w-full" alt="">
+        </div>
+        <div class="summer-collection pt-10 text-center lg:pl-36 lg:text-start bg-custom-300 flex flex-col items-center lg:items-start">
+            <p class="text-6xl">SUMMER COLLECTION</p>
+            <p class="text-sm text-custom-400 font-light py-4">13 products</p>
+        </div>
+
+        <div class="products grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 place-items-center pt-10 pb-10 px-auto lg:px-32 gap-y-10 gap-x-5 bg-custom-300">
+            <div class="bag-category  flex flex-col " data-aos="fade-up">
+                <a href="product1.html" class=" flex flex-col overflow-hidden"> 
+                    <div class="overflow-hidden">
+                        <img src="/no-bg-products/Large-Valeta-Crocheted-Raffia-Bag.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                    </div>
+                    <h1 class="font-semibold pt-4">Crocheted Abaca Bag</h1>
+                    <p class="font-light">&#8369; 2,720</p>
+                </a>
+            </div>
+
+            <div class="bag-category  flex flex-col " data-aos="fade-up" data-aos-delay="50">
+                <a href="product2.html" class=" flex flex-col overflow-hidden">
+                    <div class="overflow-hidden">
+                        <img src="/no-bg-products/Mini-Woven-Seagrass-Crossbody-Basket-Bag-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                    </div>
+                    <h1 class="font-semibold pt-4">Mini Woven Crossbody Bag</h1>
+                    <p class="font-light">&#8369; 4,470</p>
+                </a>
+            </div>
+
+            <div class="bag-category  flex flex-col " data-aos="fade-up" data-aos-delay="100">
+                <a href="product3.html" class=" flex flex-col overflow-hidden">
+                    <div class="overflow-hidden">
+                        <img src="/no-bg-products/Tiny-Falabella-Fringe-Raffia-Tote.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                    </div>
+                    <h1 class="font-semibold pt-4">Fringe Abaca Tote Bag</h1>
+                    <p class="font-light">&#8369; 4,630</p>
+                </a>
+            </div>
+
+            <div class="bag-category  flex flex-col " data-aos="fade-up" data-aos-delay="150">
+                <a href="product4.html" class=" flex flex-col overflow-hidden">
+                    <div class="overflow-hidden">
+                        <img src="/no-bg-products/Small-Rockstud-Woven-Raffia-Tote-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                    </div>
+                    <h1 class="font-semibold pt-4">Small Woven Abaca Tote</h1>
+                    <p class="font-light">&#8369; 4,000</p>
+                </a>
+            </div>
+        </div>
+        <div class="summer-collection text-center lg:text-start lg:pl-36 pt-10 bg-custom-300">
+            <p class="text-4xl">SOLD OUT</p>
+        </div>
+        <div class="products grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 place-items-center pt-10 pb-10 px-auto lg:px-32 gap-y-10 gap-x-5 bg-custom-300">
+            <div class="bag-category  flex flex-col " data-aos="fade-up" >
+                <div class="overflow-hidden">
+                    <img src="/no-bg-products/Lullah-Straw-Tote-Bag2-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                </div>
+                <h1 class="font-semibold pt-4 line-through">Lullah Straw Tote Bag</h1>
+                <p class="font-light line-through">&#8369; 2,830</p>
+            </div>
+        
+            <div class="bag-category  flex flex-col " data-aos="fade-up" data-aos-delay="50">
+                <div class="overflow-hidden">
+                    <img src="/no-bg-products/Allington-Straw-Tote-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                </div>
+                <h1 class="font-semibold pt-4 line-through">Allington Straw Tote</h1>
+                <p class="font-light line-through">&#8369; 4,630</p>
+            </div>
+        
+            <div class="bag-category  flex flex-col " data-aos="fade-up" data-aos-delay="100">
+                <div class="overflow-hidden">
+                    <img src="/no-bg-products/Apricot-Straw-Shoulder-Bag-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                </div>
+                <h1 class="font-semibold pt-4 line-through">Apricot Straw Shoulder Bag</h1>
+                <p class="font-light line-through">&#8369; 4,770</p>
+            </div>
+        
+            <div class="bag-category  flex flex-col " data-aos="fade-up" data-aos-delay="150">
+                <div class="overflow-hidden">
+                    <img src="/no-bg-products/Basket-Straw-Tote-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                </div>
+                <h1 class="font-semibold pt-4 line-through">Basket Straw Tote</h1>
+                <p class="font-light line-through">&#8369; 4,320</p>
+            </div>
+        
+            <div class="bag-category  flex flex-col " data-aos="fade-up">
+                <div class="overflow-hidden">
+                    <img src="/no-bg-products/Small-Woody-Basket-Bucket-Bag3-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                </div>
+                <h1 class="font-semibold pt-4 line-through">Small Basket Bucket Bag</h1>
+                <p class="font-light line-through">&#8369; 3,930</p>
+            </div>
+        
+            <div class="bag-category  flex flex-col " data-aos="fade-up" data-aos-delay="50">
+                <div class="overflow-hidden">
+                    <img src="/no-bg-products/Spire-Straw-Hobo-Bag-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                </div>
+                <h1 class="font-semibold pt-4 line-through">Spire Straw Hobo Bag</h1>
+                <p class="font-light line-through">&#8369; 2,520</p>
+            </div>
+        
+            <div class="bag-category  flex flex-col "   data-aos="fade-up" data-aos-delay="100">
+                <div class="overflow-hidden">
+                    <img src="/no-bg-products/Woven_Raffia_Basket_Bag-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                </div>
+                <h1 class="font-semibold pt-4 line-through">Woven Abaca Basket Bag</h1>
+                <p class="font-light line-through">&#8369; 2,330</p>
+            </div>
+        
+            <div class="bag-category  flex flex-col "  data-aos="fade-up" data-aos-delay="150">
+                <div class="overflow-hidden">
+                    <img src="/no-bg-products/Woven-Sea-Basket-Tote-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                </div>
+                <h1 class="font-semibold pt-4 line-through">Woven Sea Basket Tote</h1>
+                <p class="font-light line-through">&#8369; 5,950</p>
+            </div>
+        </div>
+        <div class="border-b border-stone-500 opacity-50  bg-custom-300"></div>
+
+
+        <section class="py-8 px-4 lg:px-36 bg-custom-300 flex flex-col">
+            
+            <div class="grid grid-cols-1 place-items-center lg:grid-cols-2 xl:grid-cols-4 gap-x-4 text-center">
+                <div class="card-pros w-[300px] flex flex-col items-center h-full p-4">
+                    <img src="/icons/star.png" class="h-7 mb-3" alt="">
+                    <p class="text-lg">PREMIUM QUALITY</p>
+                    <p class="font-light">Crafted for enduring elegance, yet versatile enough to keep up with the latest fashion trends.</p>
+                </div>
+                <div  class="card-pros w-[300px] flex flex-col items-center h-full  p-4">
+                    <img src="/icons/box-car.png" class="h-7 mb-3" alt="">
+                    <p class="text-lg">FREE SHIPPING</p>
+                    <p class="font-light">Enjoy daily free shipping on all orders with a minimum purchase.</p>
+                </div>
+                <div  class="card-pros w-[300px] flex flex-col items-center h-full p-4">
+                    <img src="/icons/shop.png" class="h-7 mb-3" alt="">
+                    <p class="text-lg">OFFICIAL STORE</p>
+                    <p class="font-light">The official online store for genuine Secosana bags.</p>
+                </div>
+                <div  class="card-pros w-[300px] flex flex-col items-center h-full p-4">
+                    <img src="/icons/padlock.png" class="h-7 mb-3" alt="">
+                    <p class="text-lg ">SECURE CHECKOUT</p>
+                    <p class="font-light">We ensure a completely safe and secure checkout process.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="footer w-full flex flex-col xl:flex-row bg-custom-400 items-center py-12">
+            <img src="/icons/Woven.png" class="h-[75px]" alt="">
+            <div class="leftborder border-l hidden xl:block h-36 border-white mx-4 pl-4"></div>
+            <div class="flex flex-col lg:flex-row justify-center xl:justify-between w-full">
+                <div class="nav flex flex-col justify-center p-4">
+                    <div class="navigation justify-center flex gap-3 mt-2" >
+                        <a href="index.html" class="text-white text-sm hover:text-stone-400 transition-colors duration-200">HOME</a>
+                        <a href="" class="text-white text-sm hover:text-stone-400 transition-colors duration-200">ABOUT</a>
+                        <a href="" class="text-white text-sm hover:text-stone-400 transition-colors duration-200">CONTACT</a>
+                    </div>
+                    <p class="rights text-center text-white text-sm mt-2">&copy; 2024, Woven Bags. All rights reserved.</p>
+                </div>
+                <div class="accounts flex flex-col justify-center p-4 xl:mr-44">
+                    <div class="flex flex-row justify-center gap-x-5">
+                        <a href=""><img src="/icons/fblogo.png" class="h-7 transition-transform duration-300 hover:transform hover:scale-105" alt=""></a>
+                        <a href=""><img src="/icons/tiktoklogo.png" class="h-7 transition-transform duration-300 hover:transform hover:scale-105" alt=""></a>
+                        <a href=""><img src="/icons/xlogo.png" class="h-7 transition-transform duration-300 hover:transform hover:scale-105" alt=""></a>
+                        <a href=""><img src="/icons/youtube logo.png" class="h-7 transition-transform duration-300 hover:transform hover:scale-105" alt=""></a>
+                    </div>
+                    <p class="text-white text-center text-sm font-light mt-2">Contact: ph@contact.woven.com</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="/scripts/onscroll.js"></script>
+    <script src="/scripts/carousel.js"></script>
+    <script src="/scripts/search.js"></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

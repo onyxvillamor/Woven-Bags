@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icons/woven-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Woven</title>
+</head>
+<body>
+    <div class="mx-auto w-[100%] sm:w-full flex flex-col font-body">
+        <div class="navbar z-20 w-full fixed flex flex-col justify-center items-center bg-white shadow-xl">
+
+            <div class="buttons flex flex-row w-full justify-between">
+                <div class="lg:flex flex-row items-center hidden" id="search-section">
+                    <button id="search-button"><img src="/icons/search.png" class="h-6 ml-[51px]" alt=""></button>
+                    <div id="search-container" class="is-hidden flex items-center flex-row w-full">
+                        <input type="text" id="search-box" class=" rounded-full w-80 py-2 px-5 border-[1px] border-black text-lg" placeholder="Search...">
+                        <button id="exit-search" class="ml-2 text-2xl cursor-pointer"><img src="/icons/close.png" class="h-4 transition-transform duration-300 ease-in-out hover:rotate-90" alt=""></button>
+                    </div>
+                </div>
+                <a href="" id="logo"><img src="/icons/logo.png" class="h-[75px] p-4 lg:p-0" alt=""></a>
+                <div id="icons" class="flex flex-row gap-x-4 items-center mr-10"> 
+                    <a href="cart.html"><img src="/icons/shopping-bag.png" class="h-6" alt=""></a>
+                    <a href="user.html"><img src="/icons/user.png" class="h-6" alt=""></a>
+                </div>
+            </div>
+            
+            <div class="nabvar-child">
+                <ul class="flex flex-row text-base my-3">
+                    <li><a href="index.html" class="mx-4 underline text-custom-200 transition-colors duration-200">HOME</a></li>
+                    <li class="relative group collection mx-4">
+                        <p class="collections text-slate-900 hover:underline hover:text-slate-200 transition-colors duration-200 cursor-pointer">COLLECTIONS</p>
+                        <ul class="hidden group-hover:block group-hover:hover:block absolute left-[-20px] top-3 mt-2 w-56 bg-white shadow-lg">
+                            <li class="mt-2 px-6"><a href="collection.html"  class=" hover:underline hover:text-slate-200 transition-colors duration-200 ">SUMMER COLLECTION</a></li>
+                            <li class="pt-2 px-6"><a href=""  class=" hover:underline hover:text-slate-200 transition-colors duration-200">COMING SOON</a></li>
+                            <li class="pt-2 px-6"><a href=""  class=" hover:underline hover:text-slate-200 transition-colors duration-200">COMING SOON</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="mx-4 text-slate-900 hover:underline hover:text-slate-200 transition-colors duration-200">ABOUT US</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="carousel relative w-full overflow-hidden" id="carousel">
+            <button class="carousel-button prev absolute top-1/2 translate-y-[-50%] text-white text-6xl p-4 cursor-pointer z-10 left-4  drop-shadow-md transition-transform duration-200 hover:transform hover:scale-125">‹</button>
+            <button class="carousel-button next absolute top-1/2 translate-y-[-50%] text-white text-6xl p-4 cursor-pointer z-10 right-4  drop-shadow-md transition-transform duration-200 hover:transform hover:scale-125">›</button>
+            <ul class="carousel-slides list-none relative w-full h-[50vh] lg:h-lvh">
+                <li class="slide absolute inset-0" data-active><a href="collection.html"><img src="/vervana-bag-photos/carousel-bag3.jpg" class="w-full h-full object-cover block object-center" alt=""></a></li>
+                <li class="slide absolute inset-0 opacity-0"><img src="/vervana-bag-photos/carousel-bag5.jpg" class="w-full h-full object-cover block object-center" alt=""></li>
+                <li class="slide absolute inset-0 opacity-0"><a href="collection.html"><img src="/vervana-bag-photos/carousel-summer-collection.jpg" class="w-full h-full object-cover block object-center" alt=""></a></li>
+                <li class="slide absolute inset-0 opacity-0"><img src="/vervana-bag-photos/carousel-bag2.jpg" class="w-full h-full object-cover block object-center" alt=""></li>            
+            </ul>
+        </div>
+        <div class="product flex flex-col items-center justify-center py-16 bg-custom-300">
+            <h1 class="text-5xl font-normal ">New Releases</h1>
+            <p class="mb-12 text-stone-500">Nature's New Look</p>
+            <div class="bags grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-14">
+                <div class="bag-category flex flex-col overflow-hidden"  data-aos="fade-up">
+                    <a href="product1.html">
+                        <img src="/icons/Large-Valeta-Crocheted-Raffia-Bag-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                    </a>
+                </div>
+                <div class="bag-category flex flex-col overflow-hidden"  data-aos="fade-up" data-aos-delay="50">
+                    <a href="product2.html">
+                        <img src="/icons/Mini-Woven-Seagrass-Crossbody-Basket-Bag-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                    </a>
+                </div>
+                <div class="bag-category flex flex-col overflow-hidden"  data-aos="fade-up" data-aos-delay="100">
+                    <a href="product3.html">
+                        <img src="/icons/Tiny-Falabella-Fringe-Raffia-Tote-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                    </a>
+                </div>
+                <div class="bag-category flex flex-col overflow-hidden"  data-aos="fade-up" data-aos-delay="150">
+                    <a href="product4.html">
+                        <img src="/icons/Small_Rockstud_Woven_Raffia_Tote-removebg-preview.png" class="h-80 transition-transform duration-300 hover:transform hover:scale-105" alt="">
+                    </a>
+                </div>
+            </div>
+            <a href="collection.html" class="w-[200px] text-center mt-10 bg-custom-400 hover:bg-custom-700 transition-all duration-200 text-white rounded-md px-4 py-3">VIEW PRODUCTS</a>
+        </div>
+        
+        <div class="slogan relative grid grid-cols-1 lg:grid-cols-2">
+            <div class="left flex items-center py-20 bg-white">
+                <h2 class="text-slate-900 drop-shadow-2xl mx-2 font-light text-4xl text-center" >Natural Elegance in Every Weave - Embrace the Charm of Straw Bags.</h2>
+            </div>
+            <div class="right overflow-hidden">
+                <img class="h-full w-full" src="/vervana-bag-photos/beach-bag-bg.jpg">
+            </div>
+        </div>
+        <div class="introduction flex flex-col bg-custom-300 w-full mx-auto text-center py-16">
+            <div class="approach flex flex-col justify-center items-center mx-4 px-20 lg:px-40">
+                <h1 class="text-5xl font-normal" data-aos="fade-right">Our Approach.</h1>
+                <p class="text-justify mt-8 " data-aos="fade-right">At Woven, we chose to innovate straw bags for women because they blend natural elegance with sustainable style. Straw bags offer timeless charm and versatile design, perfect for any wardrobe. With eco-consciousness on the rise, there’s a growing demand for sustainable fashion.</p>
+                <p class="text-justify mt-8 " data-aos="fade-right">Our straw bags meet this demand, providing stylish, environmentally friendly options that enhance your look and contribute to a greener future. Each bag reflects our commitment to quality craftsmanship and sustainability, aligning with the values of today’s discerning consumers.</p>
+            </div>
+        </div>
+        <div class="border-b border-stone-500 opacity-50  bg-custom-300"></div>
+        <section class="py-8 px-4 lg:px-36 bg-custom-300 flex flex-col">
+            
+            <div class="grid grid-cols-1 place-items-center lg:grid-cols-2 xl:grid-cols-4 gap-x-4 text-center">
+                <div  class="card-pros w-[300px] flex flex-col items-center h-full p-4">
+                    <img src="/icons/star.png" class="h-7 mb-3" alt="">
+                    <p class="text-lg">PREMIUM QUALITY</p>
+                    <p class="font-light">Crafted for enduring elegance, yet versatile enough to keep up with the latest fashion trends.</p>
+                </div>
+                <div  class="card-pros w-[300px] flex flex-col items-center h-full  p-4">
+                    <img src="/icons/box-car.png" class="h-7 mb-3" alt="">
+                    <p class="text-lg">FREE SHIPPING</p>
+                    <p class="font-light">Enjoy daily free shipping on all orders with a minimum purchase.</p>
+                </div>
+                <div  class="card-pros w-[300px] flex flex-col items-center h-full p-4">
+                    <img src="/icons/shop.png" class="h-7 mb-3" alt="">
+                    <p class="text-lg">OFFICIAL STORE</p>
+                    <p class="font-light">The official online store for genuine Secosana bags.</p>
+                </div>
+                <div  class="card-pros w-[300px] flex flex-col items-center h-full p-4">
+                    <img src="/icons/padlock.png" class="h-7 mb-3" alt="">
+                    <p class="text-lg ">SECURE CHECKOUT</p>
+                    <p class="font-light">We ensure a completely safe and secure checkout process.</p>
+                </div>
+            </div>
+        </section>
+        <div class="footer w-full flex flex-col xl:flex-row bg-custom-400 items-center py-12">
+            <img src="/icons/Woven.png" class="h-[75px]" alt="">
+            <div class="leftborder border-l hidden xl:block h-36 border-white mx-4 pl-4"></div>
+            <div class="flex flex-col lg:flex-row justify-center xl:justify-between w-full">
+                <div class="nav flex flex-col justify-center p-4">
+                    <div class="navigation justify-center flex gap-3 mt-2" >
+                        <a href="#carousel" class="text-white text-sm hover:text-stone-400 transition-colors duration-200">HOME</a>
+                        <a href="" class="text-white text-sm hover:text-stone-400 transition-colors duration-200">ABOUT</a>
+                        <a href="" class="text-white text-sm hover:text-stone-400 transition-colors duration-200">CONTACT</a>
+                    </div>
+                    <p class="rights text-center text-white text-sm mt-2">&copy; 2024, Woven Bags. All rights reserved.</p>
+                </div>
+                <div class="accounts flex flex-col justify-center p-4 xl:mr-44">
+                    <div class="flex flex-row justify-center gap-x-5">
+                        <a href=""><img src="/icons/fblogo.png" class="h-7 transition-transform duration-300 hover:transform hover:scale-105" alt=""></a>
+                        <a href=""><img src="/icons/tiktoklogo.png" class="h-7 transition-transform duration-300 hover:transform hover:scale-105" alt=""></a>
+                        <a href=""><img src="/icons/xlogo.png" class="h-7 transition-transform duration-300 hover:transform hover:scale-105" alt=""></a>
+                        <a href=""><img src="/icons/youtube logo.png" class="h-7 transition-transform duration-300 hover:transform hover:scale-105" alt=""></a>
+                    </div>
+                    <p class="text-white text-center text-sm font-light mt-2">Contact: ph@contact.woven.com</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="/scripts/onscroll.js"></script>
+    <script src="/scripts/carousel.js"></script>
+    <script src="/scripts/search.js"></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
