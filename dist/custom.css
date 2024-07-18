@@ -7,7 +7,6 @@
 
 html {
     scroll-behavior: smooth;
-    width: 100%;
 }
 
 .navbar {
@@ -37,3 +36,4 @@ html {
 .search-custom {
     margin: 26px auto 4px auto;
 }
+    
